@@ -3,18 +3,14 @@ import Header from "./Header";
 import Inventory from "./Inventory";
 import Order from "./Order";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="catch-of-the-day">
-        <div className="menu">
-          <Header tagline="Fresh Seadfood Market" />
-        </div>
-        <Order />
-        <Inventory />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="catch-of-the-day">
+    <div className="menu">
+      <Header tagline="Fresh Seadfood Market" />
+    </div>
+    <Order />
+    <Inventory />
+  </div>
+);
 
 export default App;
